@@ -1,6 +1,6 @@
 #!/usr/bin/python
 #Filename: nGrams.py
-asdf
+
 from nltk.corpus import brown
 from nltk.util import *
 
