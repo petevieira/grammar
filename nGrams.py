@@ -51,9 +51,22 @@ def getSentences(textfile):
 	# extract sentences from textfile defined in global variable and put them in a list
 	sentences = sent_tokenize.tokenize(open(textfile).read())
 	
-	# print the sentences
-	print(sentences)	
+	return sentences	
 
+# Function: getScores()
+# Precondition: a list of sentences
+# Postcondition: a dictionary of ngrams is each sentence and their score
+# Description: takes a list of sentences and gets all the n-grams (1, 3, 5)
+#		in a sentence and scores them based on the n-gram files
+#		generated in the getNGrams() function called earlier.
+#		It does so for every sentence.
+def getScores(sentence):
+	
+	for fileName in fileNames:
+		n = int(fileName[0])
+		for i in range(len(sentence) - n + 1):
+			gram = tuple(words[i:i+n])
+			if gram in nGrams
 
 if __name__ == '__main__':
 	
@@ -63,10 +76,13 @@ if __name__ == '__main__':
 #	for fileName in fileNames:
 #		n = int(fileName[0])
 #		fileName = "./ngrams/" + fileName
-#		print("Creating %s-grams file\n" % (n))
+#		print("Creating %s-file\n" % (n))
 #		getNGrams(words, fileName, n)
 
 	# extract sentences from textfile
-	getSentences(textFile)
+	sentences = getSentences(textFile)
+	print(sentences)
+	
+	getScores(sentences)
 
 	print "program is done\n"
