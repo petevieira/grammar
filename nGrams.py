@@ -1,6 +1,10 @@
 #!/usr/bin/python
 #Filename: nGrams.py
+<<<<<<< HEAD
 import nltk.data
+=======
+asdfasdf
+>>>>>>> 505e0a7ef22416e6b18a70ea057630777506b491
 from nltk.corpus import brown
 from nltk.util import *
 
