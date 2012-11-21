@@ -19,14 +19,16 @@ def correct(text):
     cid = 0
     for (cs, sid) in candSents:
         trigrams += trigramify(cs, (sid, cid))
+        cid += 1
     trigrams.sort()
 
     #run score function
-    #scoredgrams = map(lambda (t0, t1, t2, ((sid, cid), wid)):
-    #        (sid, cid, wid, t1, random.random()), trigrams)
-    getScore(trigrams)
+    scoredgrams = map(lambda (t0, t1, t2, ((sid, cid), wid)):
+            (sid, cid, wid, t1, 1), trigrams)
+    #getScore(trigrams)
 
     scoredgrams.sort()
+    #print scoredgrams
 
     nsentences = []
     bsid = 0
@@ -36,15 +38,16 @@ def correct(text):
     candS = []
     candidates = []
     for (sid, cid, wid, t1, score) in scoredgrams + [(None,None,None,None,None)]:
-        if bcid != cid or bsid != sid:
+        if (bcid != cid or bsid != sid) and cand != []:
             candidates.append( calcScore(cand) )
             cand = []
         if bsid != sid:
-            candidates.sort()
+            candidates.sort(reverse=True)
             print candidates
             nsentences.append(candidates[0][1])
             candidates = []
         cand.append( (t1, score, wid) )
+        #print sid,cid,wid, cand
         bsid = sid
         bcid = cid
         bwid = wid
@@ -52,25 +55,32 @@ def correct(text):
     #print scoredgrams
     #print
     #print nsentences
-    print nsentences
-    #return " ".join(map(lambda s: " ".join(s), nsentences))
+    return " ".join(map(lambda s: " ".join(s), nsentences))
 
 def calcScore(s):
+    #print s
+    assert( len(s) != 0 )
     rs = []
     score=0
     for (((d, s1), w), s2, wid) in s:
         rs.append(w)
-        score += s1 + s2 - d
+        score += s1 + s2 + d
     return (score, rs)
 
 def confusionSets(sentences):
 
     tcgrams = taggedConfusionTrigrams(sentences)
+    #print tcgrams
+    #print
     tcgrams.sort()
 
     #run candidate generator
-    tcgrams = map(lambda (t0, t1, t2, (sid, wid)):
-            ((sid, wid), t1, random.random()), tcgrams)
+    #tcgrams = map(lambda (t0, t1, t2, (sid, wid)):
+    #        ((sid, wid), t1, random.random()), tcgrams)
+    tcgrams = scorer.generate(tcgrams)
+    #tcgrams.sort()
+    #print tcgrams
+    #print
 
     candidates = nEmpty(len(sentences))
     for ((sid, wid), t1, score) in tcgrams:
@@ -86,9 +96,10 @@ def confusionSets(sentences):
             ncs = []
             for (candidate,score) in cs:
                 dist = distance.distance(candidate, word)
-                ncs.append( ((dist, score), candidate) )
-            ncs.sort()
+                ncs.append( ((-dist, score), candidate) )
+            ncs.sort(reverse=True)
             ncss.append(ncs[0:5])
+            #ncss.append(ncs)
         
         candSents += map(lambda s: (s, sid), combinations2(ncss))
         sid += 1
@@ -155,7 +166,7 @@ if __name__ == '__main__':
     #print combinations2([[]])
     #print combinations2([])
 
-    ss = ["This is a sentence!", "This is another sentence.", "Hello"]
+    ss = ["This is a sentence .", "This is another sentence .", "Hello"]
     #print taggedConfusionTrigrams(map(words, ss))
     print correct(" ".join(ss))
 
