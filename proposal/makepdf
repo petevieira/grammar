@@ -1,0 +1,7 @@
+#rst2latex proposal.txt > proposal.tex && \
+latex proposal.tex  && \
+bibtex proposal && \
+latex proposal.tex  && \
+pdflatex proposal.tex && \
+xpdf proposal.pdf
+

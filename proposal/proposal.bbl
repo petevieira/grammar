@@ -1,0 +1,25 @@
+\begin{thebibliography}{1}
+
+\bibitem{Bassil12}
+{\sc Bassil, Y.}
+\newblock Parallel spell-checking algorithm based on yahoo! n-grams dataset.
+\newblock {\em Science 3}, 1 (2012).
+
+\bibitem{Fossati07}
+{\sc Fossati, D., and Eugenio, B.~D.}
+\newblock A mixed trigrams approach for context sensitive spell checking.
+\newblock In {\em Computational Linguistics and Intelligent Text Processing\/}
+  (2007), vol.~4394, pp.~623--633.
+
+\bibitem{michel11}
+{\sc Michel, J., Shen, Y., Aiden, A., Veres, A., Gray, M., Pickett, J.,
+  Hoiberg, D., Clancy, D., Norvig, P., Orwant, J., et~al.}
+\newblock Quantitative analysis of culture using millions of digitized books.
+\newblock {\em science 331}, 6014 (2011), 176--182.
+
+\bibitem{norvig09}
+{\sc Norvig, P.}
+\newblock Natural language corpus data.
+\newblock {\em Beautiful Data\/} (2009), 219--242.
+
+\end{thebibliography}
