@@ -46,13 +46,14 @@ def mix(gs, fs):
 
     output = []
     for (g0, g1, g2, id) in gs:
-        somefound = False
+        gramFound = False
         for (score, (f0, f1, f2)) in fs:
             assert(f0 == g0)
             if g2 == f2:
                 output.append( (id, f1, score) )
-                somefound = True
-        if not somefound:
+                if g1 == f1:
+                    gramFound = True
+        if not gramFound:
             output.append( (id, g1, -1) )
     return output
 

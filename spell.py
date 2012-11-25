@@ -78,7 +78,7 @@ def confusionSets(sentences):
     #tcgrams = map(lambda (t0, t1, t2, (sid, wid)):
     #        ((sid, wid), t1, random.random()), tcgrams)
     tcgrams = scorer.generate(tcgrams)
-    #tcgrams.sort()
+    tcgrams.sort()
     #print tcgrams
     #print
 
@@ -98,6 +98,7 @@ def confusionSets(sentences):
                 dist = distance.distance(candidate, word)
                 ncs.append( ((-dist, score), candidate) )
             ncs.sort(reverse=True)
+            #print word, ncs
             ncss.append(ncs[0:5])
             #ncss.append(ncs)
         
