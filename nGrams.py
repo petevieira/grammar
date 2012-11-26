@@ -5,7 +5,7 @@ from nltk.corpus import brown
 from nltk.util import *
 
 # desired names for the ngram output files
-fileNames = '1-grams', '3-grams', '4-grams', '5-grams'
+fileNames = '1-grams', '2-grams', '3-grams', '4-grams', '5-grams'
 
 # Fuction: getNGrams(words, fileName, n)
 # Precondition: list of words from a corpus, a filename to be output, type of ngram
@@ -21,6 +21,7 @@ def getNGrams(sentences, fileName, n):
 	# key : value equal to  n-gram : frequency.
 	nGrams = dict()
 	for sent in sentences:
+                sent = ["^"] + sent + ["$"]
 		for i in range(len(sent) - n + 1):
 			gram = tuple(sent[i:i+n])
 			if gram in nGrams:

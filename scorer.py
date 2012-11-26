@@ -1,10 +1,10 @@
 def getGram(g):
-    print g
-    (t0, t1, t2, id) = g
-    return " ".join([t0,t1,t2])
+    #print g
+    (t, id) = g
+    return " ".join(t)
 
-def getScore(grams):
-    f = open('ngrams/3-grams')
+def getScore(grams, n):
+    f = open('ngrams/%d-grams' % n)
     glen = len(grams)
     if glen==0:
         return []
@@ -19,23 +19,23 @@ def getScore(grams):
 
         while fgram > getGram(grams[gi]):
             #print "%s is not in file" % str(grams[gi])
-            (t0, t1, t2, id) = grams[gi]
-            output.append( (id, t1, -1) )
+            (t, id) = grams[gi]
+            output.append( (id, t, -1) )
             gi += 1
             if gi == glen:
                 return output
 
         while fgram == getGram(grams[gi]):
             #print "%s is in file" % str(grams[gi])
-            (t0, t1, t2, id) = grams[gi]
-            output.append( (id, t1, score) )
+            (t, id) = grams[gi]
+            output.append( (id, t, score) )
             gi += 1
             if gi == glen:
                 return output
 
     while gi < glen:
-        (t0, t1, t2, id) = grams[gi]
-        output.append( (id, t1, -1) )
+        (t, id) = grams[gi]
+        output.append( (id, t, -1) )
         gi += 1
 
     return output
