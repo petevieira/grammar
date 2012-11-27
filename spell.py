@@ -1,19 +1,12 @@
 import operator
 import itertools
 import distance
-import nltk.data
 import random
 import scorer
-
+from nlputils import *
 
 def correct(text):
-    tokenizer = nltk.data.load('tokenizers/punkt/english.pickle')
-
-    sentences = []
-    for s in tokenizer.tokenize(text):
-        sentences.append(words(s))
-
-    candSents = confusionSets(sentences)
+    candSents = confusionSets(splitSentence(text))
 
     trigrams = []
     cid = 0
@@ -113,20 +106,6 @@ def confusionSets(sentences):
 def nEmpty(n):
     return [[] for i in xrange(n)]
 
-def trigramify(words, sid):
-    o = []
-    wid = -1
-    t0 = "^"
-    t1 = "^"
-    for w in words:
-        if wid >= 0:
-            o.append( (t0, t1, w, (sid, wid)) )
-        t0 = t1
-        t1 = w
-        wid += 1
-    o.append( (t0, t1, "$", (sid, wid)) )
-    return o
-
 def taggedConfusionTrigrams(sentences):
     o = []
     sid = 0
@@ -135,9 +114,6 @@ def taggedConfusionTrigrams(sentences):
         sid += 1
     return o
 
-
-def words(sentence):
-    return sentence.split(" ")
 
 def combinations(ls):
     if len(ls) == 0:
