@@ -5,19 +5,25 @@ import random
 import scorer
 from nlputils import *
 
-def correct(text):
-    candSents = confusionSets(splitSentence(text))
+def printf(x):
+    print x
+
+def correct(text, between=True):
+    sents = splitSentence(text)
+    if between:
+        sents = map(lambda s: list(intersperse(s, "")), sents)
+    candSents = confusionSets(sents)
 
     trigrams = []
     cid = 0
     for (cs, sid) in candSents:
         trigrams += trigramify(cs, (sid, cid))
         cid += 1
-    trigrams.sort()
 
     #run score function
     scoredgrams = map(lambda (t0, t1, t2, ((sid, cid), wid)):
             (sid, cid, wid, t1, 1), trigrams)
+    #trigrams.sort()
     #getScore(trigrams)
 
     scoredgrams.sort()
@@ -32,11 +38,13 @@ def correct(text):
     candidates = []
     for (sid, cid, wid, t1, score) in scoredgrams + [(None,None,None,None,None)]:
         if (bcid != cid or bsid != sid) and cand != []:
+            #print cand
             candidates.append( calcScore(cand) )
             cand = []
         if bsid != sid:
             candidates.sort(reverse=True)
-            print candidates
+            map(printf,candidates)
+            print
             nsentences.append(candidates[0][1])
             candidates = []
         cand.append( (t1, score, wid) )
@@ -48,7 +56,9 @@ def correct(text):
     #print scoredgrams
     #print
     #print nsentences
-    return " ".join(map(lambda s: " ".join(s), nsentences))
+    return " ".join(map(lambda s: " ".join(filter(lambda x: x!=""
+                                                 ,s))
+                       ,nsentences))
 
 def calcScore(s):
     #print s
@@ -89,7 +99,7 @@ def confusionSets(sentences):
             ncs = []
             for (candidate,score) in cs:
                 dist = distance.distance(candidate, word)
-                ncs.append( ((-dist, score), candidate) )
+                ncs.append( ((-dist*dist, score), candidate) )
             ncs.sort(reverse=True)
             #print word, ncs
             ncss.append(ncs[0:5])
@@ -98,7 +108,7 @@ def confusionSets(sentences):
         candSents += map(lambda s: (s, sid), combinations2(ncss))
         sid += 1
     #print candidates
-    #print candSents
+    print candSents
     candSents.sort()
     return candSents
 
@@ -111,9 +121,9 @@ def taggedConfusionTrigrams(sentences):
     sid = 0
     for s in sentences:
         o += trigramify(s, sid)
+        #o += betweens(s, sid)
         sid += 1
     return o
-
 
 def combinations(ls):
     if len(ls) == 0:
@@ -143,7 +153,7 @@ if __name__ == '__main__':
     #print combinations2([[]])
     #print combinations2([])
 
-    ss = ["This is a sentence .", "This is another sentence .", "Hello"]
+    ss = ["I am .", "This is a sentence .", "This is another sentence .", "Hello"]
     #print taggedConfusionTrigrams(map(words, ss))
     print correct(" ".join(ss))
 
