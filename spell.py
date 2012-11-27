@@ -7,14 +7,21 @@ import scorer
 
 
 def correct(text):
+	# load sentence tokenzier from nltk
     tokenizer = nltk.data.load('tokenizers/punkt/english.pickle')
 
     sentences = []
+	# for each sentence in 'text' break it up into words
+    # and append it as a list item to 'sentences'
+    # tokenizer.tokenize(text) splits 'text' into sentences
+    # words(s) splits each sentence 's' into words separated
+    # by commas 
     for s in tokenizer.tokenize(text):
         sentences.append(words(s))
 
     candSents = confusionSets(sentences)
 
+	# create trigrams from candidate sentences
     trigrams = []
     cid = 0
     for (cs, sid) in candSents:
@@ -67,27 +74,45 @@ def calcScore(s):
         score += s1 + s2 + d
     return (score, rs)
 
+# Takes a list of sentences formed by comma-separated words
+# and  
 def confusionSets(sentences):
 
+	# gets a list of lists of trigrams for each sentence
+	# in the text and sets tcgrams equal to it
     tcgrams = taggedConfusionTrigrams(sentences)
     #print tcgrams
     #print
-    tcgrams.sort()
+    tcgrams.sort() # how is this sorted
 
     #run candidate generator
     #tcgrams = map(lambda (t0, t1, t2, (sid, wid)):
     #        ((sid, wid), t1, random.random()), tcgrams)
+	# generates sets of confusion words based on trigrams
     tcgrams = scorer.generate(tcgrams)
     tcgrams.sort()
     #print tcgrams
     #print
 
+	# generate a list of n empty list, where n
+	# is the number of sentences in the text.
+	# this will be used to store a list of candidate
+	# sentences
     candidates = nEmpty(len(sentences))
+
+	# for each word in the confusion set of each word in
+	# each sentence store this candidate word, its score,
+	# sentence id and word id in 'candidates' list and
+	# do this for each confusion set word to create a list
+	# of candidate sentences to replace the original sentence
     for ((sid, wid), t1, score) in tcgrams:
         if len(candidates[sid]) == 0:
             candidates[sid] = nEmpty(len(sentences[sid]))
         candidates[sid][wid].append((t1, score))
 
+	# for each sentence and candidate sentence get each
+	# corresponding word and candidate word and calculate
+	# the Damerau Levenshtein distance between them
     candSents = []
     sid = 0
     for (s,css) in zip(sentences, candidates):
@@ -109,27 +134,48 @@ def confusionSets(sentences):
     candSents.sort()
     return candSents
 
-
+# Create a list of n empty lists, where n is the
+# number of sentences in the text being corrected
 def nEmpty(n):
     return [[] for i in xrange(n)]
 
+# takes a sentence, 's', and sentence id, 'sid',
+# and creates all the trigrams in the sentence with
+# corresponding sentence id's 'sid' and word id's 'wid'
+# which corresponds to the middle word of the trigram,
+# adds all of the these trigram,id pairs to a list and
+# returns it. 
 def trigramify(words, sid):
-    o = []
+    o = []				# create empty list
     wid = -1
-    t0 = "^"
+    t0 = "^"			# beginning of sentence marker
     t1 = "^"
+	# create trigrams, where t0, t1 and w are the
+	# three words in the trigram, with sentence id
+    # and word id corresponding to the word in the
+    # middle of the trigram 
     for w in words:
         if wid >= 0:
             o.append( (t0, t1, w, (sid, wid)) )
         t0 = t1
         t1 = w
         wid += 1
+    # add the last trigram with the last two words and
+    # and the end of sentence marker, '$'
     o.append( (t0, t1, "$", (sid, wid)) )
-    return o
+    return o	# return list of trigrams with sid's and wid's
 
+# takes a list of sentences and tags them with
+# the trigrams in each sentence and each trigram's
+# sentence id 'sid' and middle word id 'wid'
+# and creates a list of lists of trigrams for
+# each sentence.
 def taggedConfusionTrigrams(sentences):
-    o = []
-    sid = 0
+    o = []		#create empty list
+    sid = 0		
+	# for each sentence in 'sentences' create a list
+	# of all the trigrams and their sentence and word id's
+	# and add each one to the list 'o'
     for s in sentences:
         o += trigramify(s, sid)
         sid += 1
@@ -167,7 +213,8 @@ if __name__ == '__main__':
     #print combinations2([[]])
     #print combinations2([])
 
+	# text to be checked
     ss = ["This is a sentence .", "This is another sentence .", "Hello"]
     #print taggedConfusionTrigrams(map(words, ss))
+	# run spell checker and print result
     print correct(" ".join(ss))
-
