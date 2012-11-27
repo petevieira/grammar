@@ -56,5 +56,12 @@ if __name__ == '__main__':
     print DamerauLevenshteinDistance("ab","ba")
     print DamerauLevenshteinDistance("ab","ab")
     print DamerauLevenshteinDistance("hello","hej")
+    print DamerauLevenshteinDistance("This is sentence A .".split(" ")
+            , "This is sentence B .".split(" "))
+    print DamerauLevenshteinDistance("This is sentence A .".split(" ")
+            , "And this is sentence B .".split(" "))
+    print DamerauLevenshteinDistance(['type', "'show", 'c', "'", 'for', 'details'], 
+            ['for', 'details', 'type', "'show", 'c', "'"])
+
     print
 

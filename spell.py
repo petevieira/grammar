@@ -1,27 +1,15 @@
 import operator
 import itertools
 import distance
-import nltk.data
 import random
 import scorer
-
+from nlputils import *
 
 def correct(text):
-	# load sentence tokenzier from nltk
-    tokenizer = nltk.data.load('tokenizers/punkt/english.pickle')
 
-    sentences = []
-	# for each sentence in 'text' break it up into words
-    # and append it as a list item to 'sentences'
-    # tokenizer.tokenize(text) splits 'text' into sentences
-    # words(s) splits each sentence 's' into words separated
-    # by commas 
-    for s in tokenizer.tokenize(text):
-        sentences.append(words(s))
+    candSents = confusionSets(splitSentence(text))
 
-    candSents = confusionSets(sentences)
-
-	# create trigrams from candidate sentences
+    # create trigrams from candidate sentences
     trigrams = []
     cid = 0
     for (cs, sid) in candSents:
@@ -139,37 +127,6 @@ def confusionSets(sentences):
 def nEmpty(n):
     return [[] for i in xrange(n)]
 
-# takes a sentence, 's', and sentence id, 'sid',
-# and creates all the trigrams in the sentence with
-# corresponding sentence id's 'sid' and word id's 'wid'
-# which corresponds to the middle word of the trigram,
-# adds all of the these trigram,id pairs to a list and
-# returns it. 
-def trigramify(words, sid):
-    o = []				# create empty list
-    wid = -1
-    t0 = "^"			# beginning of sentence marker
-    t1 = "^"
-	# create trigrams, where t0, t1 and w are the
-	# three words in the trigram, with sentence id
-    # and word id corresponding to the word in the
-    # middle of the trigram 
-    for w in words:
-        if wid >= 0:
-            o.append( (t0, t1, w, (sid, wid)) )
-        t0 = t1
-        t1 = w
-        wid += 1
-    # add the last trigram with the last two words and
-    # and the end of sentence marker, '$'
-    o.append( (t0, t1, "$", (sid, wid)) )
-    return o	# return list of trigrams with sid's and wid's
-
-# takes a list of sentences and tags them with
-# the trigrams in each sentence and each trigram's
-# sentence id 'sid' and middle word id 'wid'
-# and creates a list of lists of trigrams for
-# each sentence.
 def taggedConfusionTrigrams(sentences):
     o = []		#create empty list
     sid = 0		
@@ -181,9 +138,6 @@ def taggedConfusionTrigrams(sentences):
         sid += 1
     return o
 
-
-def words(sentence):
-    return sentence.split(" ")
 
 def combinations(ls):
     if len(ls) == 0:
