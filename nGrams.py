@@ -3,6 +3,7 @@
 import nltk.data
 from nltk.corpus import brown
 from nltk.util import *
+from nlputils import *
 
 # desired names for the ngram output files
 fileNames = '1-grams', '2-grams', '3-grams', '4-grams', '5-grams'
@@ -43,6 +44,7 @@ def getNGrams(sentences, fileName, n):
 if __name__ == '__main__':
 	
 	sentences = brown.sents()
+        sentences = splitSentence(unsentences(sentences))
 	for fileName in fileNames:
 		n = int(fileName[0])
 		fileName = "./ngrams/" + fileName

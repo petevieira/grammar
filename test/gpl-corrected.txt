@@ -1,216 +1,216 @@
 GNU General Public License Third edition of the June 20 , 2007
 
-Copyright ( 1 ) 2007 Free Software Foundation , Inc. ( http : //fsf.org ) Allow anyone to copy and distribute this license document full version But it is not allowed to make any modifications
+Copyright ( C ) 2007 Free Software Foundation , Inc. ( http : //fsf.org ) Allow anyone to copy and distribute this license document full version But it is not allowed to have any modifications
 
 Introduction
 
 GNU General Public License is a free for software and other side of works , the public authority .
 
-Most software licenses affirm is designed to deprive you share and modify the software free . In contrast , the GNU General Public License for trying to protect you share freely and change free software - to assure that the software is free for all its users . We , the Free Software Foundation , as the GNU General Public License for most of our software ; This authorization applies equally to any of the software in this way . You can also get your software to use the authorization .
+Most software licenses affirm is designed to deprive you have and modify the software free . In contrast , the GNU General Public License for trying to protect you share freely and change free software - to ensure that the software is free to all its users . We , the Free Software Foundation , use the GNU General Public License for most of our software ; This authorization applies equally to any of the software in the way . You can also let your software to be the authorization .
 
-When we speak of free software , we are referring to freedom of behavior , rather than free prices . GNU General Public License is designed to make sure that you have released a copy of the free software ( and charge for , if you wish ) , free , to ensure that you receive source code or can get the source code you need to assure that you can change the software or part of it in new free software , and that you know you can do these things .
+When we say of free software , we are referring to freedom of behavior , rather than free prices . GNU General Public License is designed to make sure that you have released a copy of the free software ( and charge for , if you wish ) , free , to ensure that you receive source code or can get the source code you need to ensure that you can change the software or part of it in new free software , and that you know you can do the things .
 
-To protect your rights , we need to make requirements that forbid anyone to deny you these rights or to ask you to surrender the right . Therefore , if you post a copy of this software or modify it , you need to take up the responsibility to inspect the freedom of others .
+To protect your rights , he need to make requirements that forbid anyone to deny you these rights or to ask you to surrender the rights . Therefore , if you out a copy of this software or modify it , you need to take up the responsibility to respect the freedom of others .
 
-For example , if you distribute copies of free software , regardless of the mode free or for a few , you must you obtained the same freedom given a copy of the recipient . You must make sure that they , too , receive or can get the source code . And you must show them these terms so they knew that they enjoy such rights .
+For example , if you distribute copies of free software , regardless of the mode free or of a fee , you must you obtained the same freedom given a copy of the recipient . You must make sure that he , too , receive or can get the source code . And you must show that these terms so they know that they enjoy such rights .
 
-The developers of the GNU General Public License protect your rights with two steps : ( 1 ) Statement copyright in the software ; ( 2 ) offer you this license document to your copy , distribute and / or modify the software permitted by law .
+The developers of the GNU General Public License protect your rights with two steps : ( 1 ) Statement copyright in the software ; ( 2 ) offer you this license document to your copy , distribute and / or modify the software permitted by now .
 
-General Public License in order to protect the software developer and author clearly explains that free software is no warranty . Much as users and software of hope , the General Public License software is a modified version must be clearly marked so that their problems will be erroneously attributed to the previous version .
+General Public License in order to protect the software developer and author clearly explains that free software is no party . Such as users and software of love , the General Public License software is a modified version must be clearly marked so that their problems will be erroneously attributed to the previous version .
 
-Some devices are designed to deny users to install or run a modified version of its internal software , manufacturers can install and put them . This is fundamentally contrary to the purpose of the General Public License protect the user can modify the software free . Appear in most people can not accept personal user product areas such abuse of the authorization system mode . Therefore , we have designed this version of the General Public License prohibits the infringement of the products . In such problems in a large number of other areas , we are ready to extend this provision in future versions of the General Public License , to protect the user 's freedom .
+Some devices are designed to deny users to install or in a modified version of its internal software , manufacturers can install and run them . This is fundamentally contrary to the purpose of the General Public License protect the user can modify the software free . Bear in most people can not accept personal user product areas such abuse of the authorization system mode . Therefore , we have designed this version of the General Public License prohibits the infringement of the products . If such problems in a large number of the areas , we are ready to extend this provision in future versions of the General Public License , to protect the user 's freedom .
 
-Finally , for each program are often threatened by software patents . The government should not allow patents to restrict development and use of general-purpose computer software , but the government does allow this kind of thing in the region , we have to avoid the patents applied to a free software so that the risk of the software effectively privatized . In order to prevent this from happening , the General Public License ensure that no one is able to use the parents to non-liberalization of free software .
+Finally , for each program are often threatened by software patents . The government should not allow patents to restrict development and use of general-purpose computer software , but the government does allow this kind of thing in the region , we have to avoid the patents applied to a free software so that the risk of the software effectively privatized . In order to prevent this from happening , the General Public License ensure that no one is able to be the patents to non-liberalization of free software .
 
-The following is the detailed terms and conditions of the city , distribute and modify the software .
+The following is the detailed terms and conditions of the copy , distribute and modify the state .
 
-Terms and Conditions
+Here and Conditions
 
 0 Definition
 
-`` This License '' refer to the GNU General Public License v3
+`` This License '' referred to the GNU General Public License v3
 
-Copyright term also refers to the protection of copyright law applicable to other products such as semiconductor shield .
+Copyright term also refers to the production of copyright law applicable to other products such as semiconductor shield .
 
-`` The Program '' refer to any works protected by copyright released under this License . Licensee is addressed as `` No '' . `` Authorized person '' and `` copyright recipients '' may be individuals or organizations .
+`` The Program '' refers to any works protected by copyright released under this case . Licensee is increased as `` you '' . `` Authorized person '' and `` copyright recipients '' may be individuals or organizations .
 
-`` Modify '' works from software to copy or to make modifications of all of a wee bit different from the verbatim copying require copyright permission . Modify the outcome of previous works is called a `` modified version '' or `` based on previous works of the state .
+`` Modify '' works from software to copy or to make modifications of all of a wee bit different from the verbatim copying require copyright permission . Modify the outcome of previous works is called , `` modified version '' or `` based on previous works of the software .
 
-Coverage program `` means the program has not been modified or program based on the road .
+Coverage program `` and the program has not been modified or program based on the Program .
 
-The program of the `` spread '' refers to the use of the program to do anything if no permission will be direct or indirect infringement under applicable copyright laws , do not in the program on the computer or make shared with people you do not modify . Propagation includes copying , distribution ( with or without modification ) , shared to the public , as well as other acts in some countries .
+The program of the `` spread '' refers to the use of the program to do anything if no permission will be direct or indirect infringement under applicable copyright laws , do not run the program of the computer or make shared with people you do not modify . Propagation includes copying , distribution ( with or without modification ) , hard to the public , as well as other acts in some countries .
 
-`` public '' a work means any communication behavior of other organizations to make or receive copies . Only through a computer network and a user exchanges , and did not see the program to copy the behavior is not released .
+`` Publish '' a work than any communication behavior of other organizations to make or receive copies . Only through a computer network and a user exchanges , and is not send the program to copy the behavior is not released .
 
-A display the `` appropriate legal notice '' the interaction of user interface , including a convenience rather significantly the visual components , it has the following features : ( 1 ) displays an appropriate copyright notice ; ( 2 ) tells the use of this program does not provide any warranty ( unless the guarantees explicitly informed ) , the attorney may be released under this License of the Program , as well as a copy if you read the license agreement . In the interface displays a user command or a list of options , such as a menu option in the list need to be consistent with the above specifications .
+A display the `` appropriate legal notice '' the interaction of user interface , including a convenience rather significantly the visual components , it has the following features : ( 1 ) displays an appropriate copyright notice ; ( 2 ) tells the user of the program does not provide any warranty ( unless the guarantees explicitly informed ) , the attorney may be released under this License of the Program , as well as a copy if you read the license agreement . In the interface displays a user command or a list of options , such as a menu option in the list need to be consistent with the above specifications .
 
 2 . Source code
 
-`` Source code '' means to modify the program used in the farm . `` Object code '' refer to any non-source code form of the program .
+`` Source code '' and to modify the program used in the form . `` Object code '' refers to any non-source code form of the problem .
 
-`` Standard Interface '' has two meanings , the official standard of the First branch defined by the standards organizations ; many specially defined interface for a language , the kind of interface is widely used in such language developers .
+`` Standard Interface '' has two meanings , the official standard of the First branch defined by the standards organizations ; many specially defined interface for a large , the kind of interface is widely used in such language developers .
 
-Executable program `` system library '' does not refer to the entire program , but rather refers to the main components included in the part but does not belong to the past , and only developed in order to enable the components , or in order to achieve some existing open source standard interface . `` Major components '' here refers to a specific operating system to run the program ( if any ) key components ( kernel , window system , and so on ) , or generate the executable program compiler , or in the program object code interpreter .
+Executable program `` system library '' does not refer to the entire program , but rather refers to the main components included in the part but does not belong to the part , and only developed in order to enable the components , or in order to have some existing open source standard interface . `` Major components '' here refers to a specific operating system to run the program ( if any ) key components ( kernel , window system , and so on ) , or generate the executable program compiler , or in the program object code interpreter .
 
-Program in object code corresponding source code means all generated installation ( executable program ) in the object code and source code needed to modify the program , including the control of these behaviors script . However , it does not include system libraries needed by the program , the general-purpose tools , as well as program complete certain functions , without modification , one of those not included in the program generally available free software . For example , information such as frequent interaction of the corresponding source code includes interface definition files associated with the original file of the program , as well as a shared library source code and the programming needs through these subroutines and program section between control flow and other way to obtain the dynamic link subroutine .
+Program in object code corresponding source code means all generated installation ( executable program ) in the object code and source code needed to modify the program , including the control of these behaviors script . However , it does not include system libraries needed by the program , the general-purpose tools , as well as program complete certain functions , without modification , one of those not included in the program generally available free software . For example , information such as frequent interaction of the corresponding source code includes interface definition files associated with the original file of the program , as well as a shared library source code and the programming needs through these subroutines and program section between control flow and the ways to obtain the dynamic link subroutine .
 
-Corresponding source code does not need to contain any advocacy resources that can regenerate automatically from other parts of these resources .
+Corresponding source code does not need to contain any advocacy resources that can regenerate automatically from other parts of the resources .
 
-Source code in the form of program source code corresponding to the definition above .
+Source code in the form of program source code corresponding to the section above .
 
 2 . Basic license
 
-All rights granted under this License Agreement on the terms of the copyright of the program , and provided the stated conditions are met , these licenses can now be recovered . This License explicitly confirm that you can not in the program for any restrictions unmodified version . The authorized coverage run a program to obtain the results only in the results when a coverage program covered by this authorization . This License acknowledges your fair use or copyright law , the right of other similar acts .
+All rights granted under this License Agreement on the terms of the copyright of the program , and provided the stated conditions are not , these licenses can not be recovered . This License explicitly confirm that you can not in the program for any restrictions unmodified version . The authorized coverage run a program to obtain the results only in the results when a coverage program covered by this population . This License acknowledges your fair use or copyright law , the right of other similar acts .
 
-As long as your license is still valid , you can unconditionally production run and spread coverage program that you do not publish . As long as you comply with the terms of the dissemination of information that you do not have the copyright on this authorization , you can convey a covered work to others , to ask them to make special modifications or provide you wish the simple device of running these programs . For you to create or run coverage program as your representatives in your direction and control must do so , to prohibit any program you in the copyright of a copy of their production outside of them and your relationship .
+As long as your license is still valid , you can unconditionally production run and spread coverage program that to do not publish . As long as you comply with the terms of the dissemination of information that to do not have the copyright on this authorization , you can convey a covered work to others , to ask them to make special modifications or provide you with the simple device of running these programs . For you to create or run coverage program as your representatives in your direction and control must do so , to prohibit any program you own the copyright of a copy of their production outside of the and your relationship .
 
-When the following conditions are met , the release is permitted in any other case . Sublicensing is not allowed , 10 it becomes necessary .
+When the following conditions are not , the release is permitted in any other case . Sublicensing is not all , 10 it becomes necessary .
 
-3 . Legitimate right to protect the user against anti-crack law violated
+2 . Legitimate right to prevent the user against anti-crack law violated
 
-Under similar laws of any of the tasks described in Chapter 11 of 1996 by the World Intellectual Property Organization Copyright Treaty law , or prohibit or restrict the cracking method , over the program will not be identified as an effective technical means part of .
+Under similar laws of one of the tasks described in Chapter 11 of 1996 by the World Intellectual Property Organization Copyright Treaty law , or prohibit or restrict the cracking method , cover the program will not be identified as an effective technical means part of .
 
-When you convey a covered work , you will have to give up any of the prohibitions of the technical means to crack force of the law , even in the implementation of the right to complete the crack under the terms of the authorization on the coverage of the program . Meanwhile , you have any user action or modify the coverage program to perform your legitimate right to attempt to prohibit the technical means to crack .
+When you convey a covered work , you will have to give up one of the prohibitions of the technical means to crack force of the law , even in the implementation of the right to complete the crack under the terms of the authorization on the coverage of the program . Meanwhile , you have any user action or modify the coverage program to perform your legitimate right to attempt to prohibit the technical means to crack .
 
-4 . Not a complete copy of
+2 . Not a complete copy of
 
 The complete copy through any media , you can publish the source code of the program has not been modified , as long as your significant appropriately released on each copy an appropriate copyright notice ; maintain complete all stating that this License and any added , the terms of the non-licensed ; remain intact Disclaimer ; over the program to all recipients a copy of this authorization .
 
-You can be charged for your copy of the cost of any price or free , you can also provide technical support or liability guarantee fee .
+You can be charged for your copy of the most of any price or free , you can also provide technical support or liability guarantee fee .
 
 2 . Not a modified version of the source code
 
-You can in source form in the first four under the terms of a software based on the program , or from the production of the software needed to modify the program , as long as you meet all of the following conditions :
+You can in source form in the first four under the terms of a software based on the Program , or from the production of the software needed to modify the program , a long as you meet all of the following conditions :
 
 ( A ) the production of software must be included prominent notices stating that you modified it , and giving a relevant date .
 
-( B ) produced by the software must contain a clear notice , statement , it pointed released under this License and any conditions added 7 . This requirement modifies the requirements of section 4 to `` keep intact all notices '' .
+( B ) produced by the software must contain a clear notice , statement , it pointed released under this License and any conditions added 7 . This requirement modifies the requirement of section 4 to `` keep intact all nature '' .
 
-( C ) You must license the entire work , as a whole , to any person to obtain a copy of authorization in accordance with the license agreement . This License will therefore any added terms in accordance with section 7 of the whole and all its parts , regardless of how they are packaged , since the force of war . The license does not allow any other form of authorization the contrary , but if you have separately received such permission , the authorization does not negate the license .
+( C ) You must license the entire work , as a whole , to any person to obtain a copy of authorization in accordance with the license agreement . This License will therefore any added terms in accordance with section 7 of the whole and all its parts , regardless of how they are packaged , in the force of law . The license does not allow any other form of authorization the state , but if you have separately received such permission , the authorization does not negate the license .
 
-( D ) If you make the package containing the interactive user interface , each user interface must display Appropriate Legal Notices ; However , if the Program has interactive interfaces that do not display Appropriate Legal Notices , your software is not necessary to modify the make them do so .
+* D ) If you make the package containing the interactive user interface , each user interface must display Appropriate Legal Notices ; However , of the Program has interactive interfaces that do not display Appropriate Legal Notices , your software is not necessary to modify the make them do so .
 
-A cover of the Commonwealth of the program and the other is not itself the program 's expansion program , the joint was not intended to generate a larger program in a storage or distribution medium , and the Commonwealth of the program and consequential Copyright useless program to limit use or limit the legal rights of the users of the single program given the joint program , the consortium is called a `` aggregate '' . Inclusion of a covered work is an aggregate does not cause this License to apply to the other parts of the aggregate .
+A cover of the Commonwealth of the program and the other is not itself the program 's expansion program , the joint was not intended to generate a larger program in a storage or distribution medium , and the Commonwealth of the program and consequential Copyright useless program to limit use or limit the legal rights of the users of the single program in the joint program , the consortium is called an `` aggregate '' . Inclusion of a covered work in an aggregate does not cause this License to apply to the other part of the aggregate .
 
 2 . Not a copy of the non-source form of
 
-You can distribute the Program in object code form under the terms of sections 4 and 4 , as long as you look at a way corresponding machine-readable source code is released under the terms of this License :
+You can distribute the Program in object code form under the terms of sections , and 5 , as long as you look at a way corresponding machine-readable source code is released under the terms of this License :
 
 ( A ) in the physical product ( including a physical distribution medium ) , or as a part of the object code , and release the corresponding source code in a durable physical medium used for software interchange .
 
-( B ) physical product ( including a physical distribution medium ) , or as part of the object code , together with the validity of at least 3 years and a long time and provide spare parts or customer support for that product model , a written undertaking given to each person who possesses the object code of ( 1 ) either in a durable physical medium used for software interchange , not higher than the price it takes to perform this source the release behavior of a reasonable fee , a copy of the product copy of the corresponding source code for all software covered by the authorization ; ( 2 ) free of charge either through the network server to provide access to the corresponding source code .
+* B ) physical product ( including a physical distribution medium ) , or a part of the object code , together with the validity of at least 3 years and a long time and provide spare parts or customer support for that product model , a written undertaking given to each person who possesses the object code of ( 1 ) either in a durable physical medium used for software interchange , not higher than the price it takes to perform this source the release behavior of a reasonable fee , a copy of the product copy of the corresponding source code for all software covered by the authorization ; ( 2 ) free of charge either through the network server to provide access to the corresponding source code .
 
-( C ) publish a copy of the object code alone , together with a written commitment to provide the corresponding source code . This behavior is allowed only occasionally and not profitable when you received the object code with the commitment to the provisions of the Section 6 ( 1 ) .
+( C ) publish a copy of the object code alone , together with a written commitment to provide the corresponding source code . The behavior is allowed only occasionally and not profitable when you received the object code with the commitment to the provisions of the Section 6 ( b ) .
 
-( D ) at a designated place ( gratis or for a charge ) , providing access to the object code released and not increase the price of the corresponding source code in the same place at the same access . You need not require recipients to copy the object code when a copy of the corresponding source code . If the place to copy the object code is a network server , the corresponding source code in another server supports equivalent copying ( by you for a third party ) , as long as you clearly pointed out that next to the object code Where can I find the corresponding source code . No matter what server provides the corresponding source code , you have an obligation to assure that it is available in any demand to meet the requirements of this section .
+* D ) at a designated place ( gratis or of a charge ) , providing access to the object code released and not increase the price of the corresponding source code in the same place at the same access . You need not require recipients to copy the object code when a body of the corresponding source code . If the place to copy the object code is a network server , the corresponding source code in another server supports equivalent copying ( by you or a third party ) , as long as you clearly pointed out the next to the object code Where can I find the corresponding source code . No matter what server provides the corresponding source code , you have an obligation to ensure that it is available in any demand to meet the requirements of the section .
 
 ( E ) distribute the object code using peer-to-peer transfer , you need to inform the other nodes in the object code and source code where provided free of charge to the public in accordance with the terms of d 6 .
 
-Separable portion of the object code , whose source code as a system library is not included in the corresponding source code , does not need to include in the object code of behavior .
+Separable portion of the object code , whose source code as a system library is not included in the corresponding source code , does not need to increase in the object code of behavior .
 
-`` User Product '' means ( 1 ) a `` consumer '' , which is usually used for personal , family or day-to-day purposes , tangible personal property ; , or ( 2 ) any design or sales for the company was said to the personal stuff . In determining whether a product is a consumer product , doubtful cases shall be conducive to the coverage of the results to be used . A particular product received by a particular user , `` normally used '' refers to a typical or common use of such products , regardless of the special circumstances of the sea , or the user is the actual use of the product , or how to use the product requirements . Whether a product is on consumer goods , and whether the product has substantial commercial , industrial or non-consumer uses , unless such uses is the only significant mode of one of such products .
+`` User Product '' means ( 1 ) a `` consumer '' , which is usually used for personal , family or day-to-day purposes , tangible personal property ; , or ( 2 ) any design or sales of the company was sold to the personal stuff . In determining whether a product is a consumer product , doubtful cases shall be conducive to the coverage of the results to be used . A particular product received by a particular user , `` normally used '' refers to a typical or common use of such products , regardless of the special circumstances of the user , or the user is the actual use of the product , or how to be the product requirements . Whether a product is on consumer goods , and whether the product has substantial commercial , industrial or non-consumer uses , unless such uses in the only significant mode of use of such products .
 
-User Product `` Installation Information '' refers to a modified version of the covered work from the corresponding source code modified version of install and in the user need any method , process , authorization keys , or other information . The information must be sufficient to assure that the modified object code is not just because modification has been unable to continue running .
+User Product `` Installation Information '' refers to a modified version of the covered work from the corresponding source code modified version of install and in the user need any method , process , authorization keys , or other information . The information must be sufficient to ensure that the modified object code is not just because modification has been able to continue running .
 
-If you are under the provisions of this section in the user product , or with , or specifically for me , distribute the object code program in the publishing process user ownership and use rights are permanent or fixed term ( regardless The characteristics of the released ) and transferred to the recipient , the corresponding source code released under the terms described in this section must contain the installation information . But if you or any third-party organization did not retain the ability to install modified object code of the User Product ( for example , the program is installed in the ROM ) , this requirement will not take effect .
+If you are under the provisions of the section in the user product , or with , or specifically for use , distribute the object code program in the publishing process user ownership and use rights are permanent or fixed term ( regardless The characteristics of the released ) and transferred to the recipient , the corresponding source code released under the terms described in this section must contain the installation information . But if you or any third-party organization did not retain the ability to install modified object code of the User Product ( for example , the program is installed in the ROM ) , this requirement will not take effect .
 
-Provide installation information and did not ask for the recipient to modify or install the program , or modify or install the program user products continue to provide support service , warranty or upgrade . Network access can be denied when the modification itself materially and adversely affects the operation of the network , or in violation of the roles and agreements of the network communication .
+Provide installation information and is not ask for the recipient to modify or install the program , or modify or install the program user products continue to provide support service , warranty or upgrade . Network access can be denied when the modification itself materially and adversely affects the operation of the network , for in violation of the rules and agreements of the network communication .
 
 Common file format issued by this section , the corresponding source code , and provide installation information must be released , and attach one of the type of document to achieve method in source code form to the public shared ) , decompress , reading or copying this information can not require any password .
 
 2 . Additional Terms
 
-`` Additional permissions '' to supplement a special case by allowing some of the License , the terms of this License . As long as they are valid under applicable law , the entire program into effect additional license should be considered in the contents of this authorization . If additional permissions apply only to part of the program take effect , then the part can separately under those permissions , but the entire program is under the management of the authorizations , regardless of the additional permissions .
+`` Additional permissions '' to supplement a special case by allowing some of the License , the terms of this case . As long as they are valid under applicable law , the entire program into effect additional license should be considered in the contents of this authorization . If additional permissions apply only to part of the program take effect , when the part can separately under those permissions , but the entire program is under the management of the authorization , regardless of the additional permissions .
 
-When you post a copy of a covered , you can choose to delete the cost of all or part of any additional license . ( When you modify the program , additional license may require their own removal in certain cases ) . You can place additional permissions on material , and to that you have or can give appropriate copyright permission coverage program .
+When you post a copy of a covered , you can choose to delete the copy of all or part of an additional license . ( When you modify the problem , additional license may require their own removal in certain cases ) . You can place additional permissions on material , and to that you have or can give appropriate copyright permission coverage program .
 
 The authorized elsewhere provided for you to join in the program material , you can , if you are authorized by the copyright holder of the material ) with the following terms and conditions supplement the authorization :
 
-a. refuse warranties or limitation of liability sections 15 and 16 the terms of the authorization ; or
+a. refuse warranties or limitation of liability sections 15 and 16 the terms of the congregation ; or
 
 b. require preservation of specified reasonable legal notices for the material contained in the author of the program in the appropriate legal notices contribution ;
 
-c. prohibits misrepresentation of the material source , or a modified version of the material marked in reasonable ways as different from the original version version ; or
+c. prohibits misrepresentation of the material source , for a modified version of the material marked in reasonable ways as different from the original version version ; or
 
 d. restrict the name of the author or licensor of the material used for publicity purposes ;
 
-e reduce the level of authorization under trademark law for use of some trade names , trademarks or service marks ; or
+e reduce the level of authorization under trademark law for one of some trade names , trademarks or service marks ; or
 
-f. publish the material ( or modified versions ) with the responsibility of the recipient to assume the contract authorization , and material of protection to avoid any such assumptions contract is a direct result of the authorized and the responsibility of the author .
+f. publish the material ( or modified versions ) with the responsibility of the recipient to assume the contract authorization , and material of protection to avoid any such assumptions contract is a direct result of the authorized in the responsibility of the author .
 
-All other non-permissive additional terms are considered to be 10 `` further restrictions '' . If you receive the program or its parts , claims to be authorized by the management , and a further restriction , you may remove that . If a license document contains a further restriction but allows relicensing or released under this License , this further constraints can now be preserved in such relicensing or release , you can file the terms of the management of the authorization in the coverage program under the material .
+And other non-permissive additional terms are considered to be 10 `` further restrictions '' . If you receive the program or its part , claims to be authorized by the management , and , further restriction , you may remove that . If a license document contains a further restriction but allows relicensing or released under this License , this further constraints can not be preserved in such relicensing or release , you can file the terms of the management of the authorization in the coverage program and the material .
 
 If you add terms to a covered work pursuant to his section , you must join the statement of the additional terms that apply to those files in the source file , or specify where notice of these terms can be found .
 
-Additional terms and conditions , whether licensed or non-licensed terms , can be written on a separately written license , or stated as exceptions ; Both of these methods can achieve the above requirements .
+Additional terms and conditions , whether licensed or non-licensed terms , can be written in a separately written license , or stated as exceptions ; Both of the methods can achieve the above requirements .
 
-2 . Termination of authorization
+2 . Examination of authorization
 
-Expressly authorized in this License , not only have to propagate or modify any covered work . In other dissemination or modify a covered program attempts are illegal , and will automatically terminate your rights under this License ( including any patent granted according to 11 of the third paragraph of the terms authorized ) .
+Expressly authorized in this License , for only have to propagate or modify any covered work . In other dissemination or modify a covered program attempts are illegal , and will automatically terminate your rights under this License ( including any patent granted according to 11 of the third paragraph of the terms authorized ) .
 
-However , if you cease all violation of this License , then your license from a particular copyright holder is obtained in the following manner to restore ( 1 ) You can temporarily authorized to have , to terminate your license until the copyright holder explicitly ; ( b ) If , within 60 days after you stop the violation of this License , the copyright holder is not in some reasonable way to inform your breach , then you can permanently get the authorization .
+However , if you cease all violation of this License , then your license from a particular copyright holder is obtained in the following manner to restore ( a ) You can temporarily authorized to have , to terminate your license until the copyright holder explicitly ; ( b ) If , within 60 days after you to the violation of this License , the copyright holder is not in some reasonable way to inform your breach , then you can permanently get the authorization .
 
-Further , in a copyright holder in some reasonable way to inform your acts of violation of this License , which is the first time you receive a notice of violation of the authorization from the copyright holder ( of any software ) , and within 30 days of receipt of the notification amendment violation , then you will get the authorization from the copyright holder permanently restore .
+Further , if a copyright holder in some reasonable way to inform your acts of violation of this License , which in the first time you receive a notice of violation of the authorization from the copyright holder ( of any software ) , and within 30 days of receipt of the notification amendment violation , then you will get the authorization from the copyright holder permanently restore .
 
-Organizations to obtain authorization from you when your license is terminated under the provisions of this section , as long as they do not violate the license agreement , and its mandate will not be terminated . Rights have been restored , not only have to qualify under the terms of the 10 new authorized access to the material .
+Organizations to obtain authorization from you when your license is terminated under the provisions of the section , as long as they do not violate the license agreement , and its mandate will not be terminated . Rights have been restored , for only have to qualify under the terms of the 10 new authorized access to the material .
 
 2 . Yet a copy does not need to accept this License
 
-You do not have to accept this License Agreement in order to receive or run a copy of this program . Just because of the peer-to-peer transmission to receive a copy propagation behavior , does not require acceptance of this License Agreement . However , in addition to the authority of any licensing agreements are not granted permission you propagate or modify any covered work . Therefore , if you are modifying or propagating a copy of this program , when you default to accept this License .
+You do not have to accept this License Agreement in order to receive or run a copy of the program . But because of the peer-to-peer transmission to receive a copy propagation behavior , does not require acceptance of this License Agreement . However , in addition to the majority of any licensing agreements are not granted permission you propagate or modify any covered work . Therefore , if you are modifying or propagating a copy of the program , then you default to accept this License .
 
 1 . Downstream recipient automatically authorize
 
-Each time you convey a covered work , the recipient automatically receives a license from the original authorized in accordance with the license agreement to run , modify and propagate the authorization of the program . Pursuant to this authorization , you are not responsible for the implementation of any third-party organization .
+Each time you convey a covered work , the recipient automatically receives a license from the original authorized in accordance with the license agreement to run , modify and propagate the authorization of the problem . Pursuant to this authorization , you are not responsible to the implementation of any third-party organization .
 
-`` Entity transaction '' refer to the transfer of the control of an organization , or substantially all assets , or subdividing an organization , or merging organizations affairs . If propagation of a covered entity transaction , each organization receiving a copy of the program in the transaction will be a copy of its predecessor has authorized or able to be provided under the terms of the previous corresponding work from the predecessor program the rights of the source code , if the predecessor has reasonable efforts to obtain the source code .
+`` Entity transaction '' refers to the transfer of the control of an organization , or substantially all costs , or subdividing an organization , or merging organizations affairs . If propagation of a covered entity transaction , each organization receiving a copy of the program in the transaction will get a copy of its predecessor has authorized or able to be provided under the terms of the previous corresponding work from the predecessor program the rights of the source code , of the predecessor has reasonable efforts to obtain the source code .
 
-You may not impose any constraints on the implementation of the rights from the license agreement to obtain or confirm . For example , you may not impose a license fee , royalty , or other charge any fees for the implementation of the rights granted under this License . You may not initiate litigation ( including a joint lawsuit and counterclaim ) claimed that by making , using , yelling , wholesale or importing the Program or any part thereof infringes any patent .
+You may not impose any constraints on the implementation of the light from the license agreement to obtain or confirm . For example , you may not impose a license fee , royalty , or other charge any fees to the implementation of the rights granted under this License . You may not initiate litigation ( including a joint lawsuit and counterclaim ) claimed that by making , using , selling , wholesale or importing the Program or in part thereof infringes any patent .
 
 1 . Patent
 
-`` Contributor '' is a copyright holder of the program of the program based on the program use rights granted under this License . This program is to become a contributor 's `` contributor version '' .
+`` Contributor '' is a copyright holder of the program of the program based on the program use rights granted under this License . The program is to become a contributor 's `` contributor version '' .
 
-A contributor 's `` essential patent affirms the contributor 's share of all patents and control , whether already acquired or obtained in the future , that may be some way infringe the patient . The authorization allows the production , use and sale of its contributor version , it does not include only further modification of the contributor version violated patents affirmed . For this purpose , `` control '' includes the right to grant patent sublicenses in a manner consistent with the requirements of this authorization .
+A contributor 's `` essential patent affirms the contributor 's share of all patents and control , which already acquired or obtained in the future , that may be some way infringe the patent . The authorization allows the production , he and sale of its contributor version , but does not include only further modification of the contributor version violated patents affirmed . For the purpose , `` control '' includes the right to grant patent sublicenses in a manner consistent with the requirements of this authorization .
 
-Each contributor patent license under the contributor grants you a non-exclusive , worldwide , without royalty patent license allows you to create , use , sale , wholesale , import and otherwise run , modify and propagate its contribution those versions of context .
+Each contributor patent license under the contributor grants you a non-exclusive , worldwide , without royalty patent license allows you to create , so , sale , wholesale , import and otherwise run , modify and propagate its contribution those versions of content .
 
-In the following three paragraphs , a `` patent license '' is any express agreement or commitment not to enforce a patent ( such as the use of patented oral permission for a contract not to sue for patent infringement ) . To an organization to grant a patent license to make this not to the organization proposed to enforce patent rights commitments .
+In the following three paragraphs , a `` patent license '' is any express agreement or commitment not to enforce a patent ( such as the use of patented oral permission or a contract not to be for patent infringement ) . To an organization to grant a patent license to have this not to the organization proposed to enforce patent rights commitments .
 
-If you clearly know a release authorization based on a patent covering the program , the corresponding source code of the program and can not , and the terms of this License by the network server or other effective way to the public free of charge to provide access , you must be : ( 1 ) to access the corresponding source code in accordance with the above method ; , or ( 2 ) abandon authorized to get any benefit from the program 's patent ; , or ( 3 ) the patent somehow consistent with the requirements of this License authorization extends to downstream recipients . One or more of the `` in case they clearly know '' means you know that in a country for the patent license , your conveying the covered behavior or recipient to cover the program 's behavior , due to the authorization of the patent infringement patent rights recognized in the country , and these patents you have sufficient reason to believe that they are valid .
+If you clearly know a release authorization based on a patent covering the program , the corresponding source code of the program and can not , and the terms of this License by the network server or other effective way to the public free of charge to provide access , you must be : ( 1 ) to access the corresponding source code in accordance with the above method ; , or ( 2 ) abandon authorized to get any benefit from the program 's patent ; , or ( 3 ) the patent somehow consistent with the requirements of this License authorization extends to downstream recipients . One or more of the `` in case they clearly know '' means you know that in a country to the patent license , your conveying the covered behavior or recipient to cover the program 's behavior , due to the authorization of the patent infringement patent rights recognized in the country , and these patents you have sufficient reason to believe that they are valid .
 
-, Pursuant to or in connection with a single transaction or arrangement , if you get the version of the publication or dissemination of a program transmission , and to give some organizations receiving the covered work , patent licensing , allows them to me , dissemination , modify , or of the covered special version , then the patent license you grant these organizations will be automatically extended to the recipient of all the covered work and works based on the program .
+, Pursuant to or in connection with a single transaction or arrangement , if you get the version of the publication or dissemination of a program transmission , and to give some organizations receiving the covered work , patent licensing , allows them to use , dissemination , modify , or of the covered special version , then the patent license you grant these organizations will be automatically extended to the recipient of at the covered work and works based on the program .
 
-A patent license is `` biased '' , if it is not included within the scope of its coverage , prohibits the exercise of , or the requirements do not perform explicitly recognized under the authority of one or more of the right . If you can not convey a covered work : If your software distribution industry of third-party organizations Agreement , the Agreement requires that you pay to the organization , according to the release of the program while the organization is given in your agreement any organization to receive the covered work from you , a discriminatory patent license , either ( 1 ) , together with a copy of your release ( or copies made from those copies ) ; either ( b ) primarily for and together with a products or contain the covered work , the Commonwealth . If you sign the agreement or the date of the patent license earlier than March 28 , 2007 , when you are not subject to the terms of .
+A patent license is `` biased '' , if it is not included within the scope of its coverage , prohibits the exercise of , for the requirements do not perform explicitly recognized under the authority of one or more of the rights . If you can not convey a covered work : If your software distribution industry of third-party organizations Agreement , the Agreement requires that you pay to the organization , according to the release of the program while the organization is given in your agreement any organization to receive the covered work from you , a discriminatory patent license , the ( a ) , together with a copy of your release ( or copies made from those copies ) ; either ( b ) primarily for and together with a products or contain the covered work , the Commonwealth . If you sign the agreement of the date of the patent license earlier than March 28 , 2007 , then you are not subject to the terms of .
 
 And part of this authorization will not be construed to deny or limit any implied license or other measures to protect your patent inviolable under applicable patent law .
 
 2 . Do not give up the freedom of others
 
-If you 're experiencing with the authorization to the paradoxical situation ( both court decisions , contracts , or other circumstances ) , they can now be removed from the requirements of this License . If you can not at the same time in accordance with the authorization of the obligations and other obligations of a covered work , when you will not be able to publish them . For example , if you are accepted to this program may receive from you the terms of the royalty-free , the only way you could satisfy both the authorization and those terms do not publish the program .
+If you 're experiencing with the authorization to the paradoxical situation ( both court decisions , contracts , or other circumstances ) , he can not be removed from the requirements of this License . If you and not at the same time in accordance with the authorization of the obligations and other obligations of a covered work , then you will not be able to publish them . For example , if you are accepted to the program may receive from you the terms of the royalty-free , the only way you could satisfy both the authorization and those terms do not publish the program .
 
 3 . Used with the GNU Affero General Public License
 
-Notwithstanding any other provision of this Agreement , you have the right to link any coverage program and the program based on the third edition of the GNU Affero General Public License , and publish the joint program . The terms of this authorization remains effective for your coverage program , but the GNU Affero General Public License section 13 , concerning interaction through a network request be interested in the entire Commonwealth .
+Notwithstanding any other provision of the Agreement , you have the right to link any coverage program and the program based on the third edition of the GNU Affero General Public License , and publish the joint program . The form of this authorization remains effective for your coverage program , but the GNU Affero General Public License section 13 , concerning interaction through a network request be interested in the entire Commonwealth .
 
-4 . The revision of the authorized
+1 . The reaction of the authorized
 
-The Free Software Foundation may publish revised version of the GNU General Public License and / or new versions . Such new versions will be similar in spirit to the present version , it may differ in detail to address new problems and situations .
+The Free Software Foundation may publish revised version of the GNU General Public License and / or new regions . Such new versions will be similar in part to the present version , but may differ in detail to address new problems and situations .
 
-Each version is in a distinguishing version number . In the Program specifies that a particular applied to the program of the GNU General Public License version number `` any later version '' , you have the right to choose the terms and conditions of that version or of any later version published by the Free Software Foundation . In the program does not specify the specific terms of the GNU General Public License version number , you can select any of the Free Software Foundation has released version .
+Each version is in a distinguishing version number . If the Program specifies that a particular applied to the program of the GNU General Public License version number `` any later version '' , to have the right to choose the terms and conditions of that version or of any later version published by the Free Software Foundation . In the program does not specify the specific terms of the GNU General Public License version number , you can select any of the Free Software Foundation has released version .
 
-If the Program specifies that a proxy can decide the future of the GNU General Public License can be used in the program , then the extent to accept any version of the public referred to above are applied to the program permanently authorizes you to choose the version .
+In the Program specifies that a proxy can decide the future of the GNU General Public License can be used in the program , then the agent to accept any version of the public referred to above are applied to the program permanently authorizes you to choose the version .
 
 Later license versions may give you additional or different license . However , you choice of subsequent versions will not impose any obligations on any author or copyright holder .
 
 1 . Disclaimer
 
-Permitted by applicable law , this authorization does not the program undertake any guarantee responsibility . Unless a written statement , therefore , the copyright holder and / or third-party organization of this program , `` business as usual '' does not assume the responsibility of warranty of any kind , either promised or implied , including , but not limited to , implied warranties of merchantability and as a a special PURPOSE default warranties . Near the entire risk of the quality and performance of the program . SHOULD THE PROGRAM PROVE DEFECTIVE , you should bear all the necessary services , the cost of repair or correction .
+Directed by applicable law , this authorization does not the program undertake any guarantee responsibility . Unless a written statement , otherwise , the copyright holder and / or third-party organization of the program , `` business as usual '' does not assume the responsibility of warranty of any kind , either promised or implied , including , but not limited to , implied warranties of merchantability and as a a special PURPOSE default warranties . Bear the entire risk of the quality and performance of the problem . SHOULD THE PROGRAM PROVE DEFECTIVE , or should bear all the necessary services , the cost of repair or correction .
 
-1 . Limitation of Liability
+1 . Examination of Liability
 
-Unless required by applicable law or written consent , any copyright holder , or modified in accordance with the foregoing , and / or distribute the program , For your general resulting from the use of or inability to use the program , the particularity of accidental or indirectly , are affected by damages , assumes any liability ( including , but not limited to , most of data , Data Execution inaccurate or BY YOU OR THIRD PARTIES loss , or the program can not be with the operation of other programs ) , even if the copyright holder or The same is true of other organizations has been advised of the possibility of such loss program .
+Unless required by applicable law or written consent , any copyright holder , or modified in accordance with the foregoing , and / or distribute the program , For your general resulting from the use of or inability to use the program , the particularity of accidental or indirectly , are affected by damages , assumes any liability ( including , but not limited to , loss of data , Data Execution inaccurate or BY YOU OR THIRD PARTIES loss , or the program can not be with the operation of the programs ) , even if the copyright holder or The same is true of other organizations has been advised of the possibility of such loss program .
 
-1 . Interpretation of sections 15 and 16
+1 . Preparation of sections 15 and 16
 
 If the disclaimer of warranty and the scope of responsibility can not be given legal effect in accordance with local laws and terms , reviewing courts shall apply the closest to completely give up the law of the civil liability of the program , unless accompanied guarantees or obligations of the responsibility of the program assumes that the contract fees .
 
@@ -218,27 +218,27 @@ If the disclaimer of warranty and the scope of responsibility can not be given l
 
 How to apply these provisions in the new program .
 
-If you develop a new program , and you want it was much as possible to the general public , the best way to achieve this purpose is to make it free software . Anyone in accordance with these terms and conditions of the software re-released and modify .
+If you develop a new program , and you want it was much as possible to the general public , the best way to achieve this purpose is to make it free software . Anyone in accordance with these terms and conditions of the software re-released and body .
 
-To do this , attach the following notices to the program . The safest approach , the statement placed at the beginning of each source file to most effectively convey the message unsecured obligations ; and each file should have at least the `` copyright '' column , and this statement where the full prompt .
+to do this , attach the following notices to the program . The safest approach , the statement placed at the beginning of each source file to most effectively convey the message unsecured obligations ; and each file should have at least the `` right '' column , and this statement where the full prompt .
 
-( One line to give the program 's name and a brief Copyright ( C ) < year > < name >
+< One line to have the program 's name and a brief Copyright ( C ) < year > < name >
 
 This program is free software ; based on the GNU General Public License as published by the Free Software Foundation , the program re-released and / or modify ; Whether you are based on the third edition of the License , or , at your option ) any issued after 1 version .
 
-This program is based on the use of the purpose to be released , but WITHOUT ANY WARRANTY ; nor the implied warranty as to the implied warranties of merchantability or fitness for a particular purpose . For details , please refer to the GNU General Public License .
+The program is based on the use of the purpose to be released , but WITHOUT ANY WARRANTY ; nor the implied warranty as to the implied warranties of merchantability or fitness for a particular purpose . For this , please refer to the GNU General Public License .
 
-You along with this program should have received a copy of the GNU General Public License ; If not , please refer to the < http : //www.gnu.org/licenses/ > .
+You along with the program should have received a copy of the GNU General Public License ; If not , please refer to the < http : //www.gnu.org/licenses/ > .
 
-Together with information on how to contact you by electronic and paper mail .
+Together with information on down to contact you by electronic and paper mail .
 
-If the program does terminal session mode of operation , beginning in interactive mode , then the output following tips :
+In the program does terminal session mode of operation , beginning in interactive mode , the the output following tips :
 
-< Program > Copyright ( 1 ) < year > < author name > The program WITHOUT ANY WARRANTY , for details type `show w ' . This is a free software , you are welcome to redistribute it under certain conditions ; for details type 'show c ' .
+< Program > Copyright ( C ) < year > < author name > The program WITHOUT ANY WARRANTY , for this type `show w ' . This is a free software , you are welcome to redistribute it under certain conditions ; for this type 'show c ' .
 
-The hypothetical commands 'show w ' and 'show c ' should show the relative should be the terms of the General Public License . Of course , you can use the command name other than 'show w ' and 'show c ' ; graphical user interface , you can use `` about you '' to implement this feature .
+The hypothetical commands 'show w ' and 'show c ' should know the relative should be the terms of the General Public License . of course , you can use the command name other than 'show w ' and 'show c ' ; graphical user interface , you can use `` about box '' to implement this feature .
 
-If necessary , you should also get your employer ( if you work as a programmer ) or your school , the program sign , `` copyright disclaimer '' . For further details in this regard D as well as the application of and compliance with the GNU General Public License , please refer to < http : //www.gnu.org/licenses/ >
+If necessary , you should also get your employer ( if you work as a programmer ) or your school , the program sign , `` copyright disclaimer '' . For further details in this year , as well as the application of and compliance with the GNU General Public License , please refer to < http : //www.gnu.org/licenses/ >
 
-GNU General Public License does not allow you to serve the program into proprietary programs . If your program is a subroutine library , you may allow proprietary applications to find the library will be more useful . If this is what you want to do , as the GNU Lesser General Public License instead of this License . But before doing so , please read the < http : //www.gnu.org/philosophy/why-not-lgpl.html >
+GNU General Public License does not allow you to serve the program into proprietary programs . If your program in a subroutine library , you may allow proprietary applications to link the library will be more useful . If this is what you want to do , as the GNU Lesser General Public License instead of this License . But before doing so , please read the < http : //www.gnu.org/philosophy/why-not-lgpl.html >
 

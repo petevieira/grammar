@@ -52,6 +52,16 @@ def trigramify(words, sid):
     return o
 
 
+def gramify(n, sent, id):
+    l = []
+    sent = ["^"] + sent + ["$"]
+    for i in range(len(sent) - n + 1):
+        gram = sent[i:i+n]
+        l.append( (gram, (id, i)) )
+    return l
+        
+
+
 def betweens(words, sid):
     o = []
     wid = -1

@@ -1,6 +1,9 @@
+import operator
+
 def getGram(g):
     #print g
     (t, id) = g
+    #return " ".join(map(operator.itemgetter(1), t))
     return " ".join(t)
 
 def getScore(grams, n):
@@ -10,35 +13,44 @@ def getScore(grams, n):
         return []
     gi = 0
     output = []
+    lastgram = getGram(grams[gi])
+    count = 0
+    total = 0
     for line in f:
         fgram = line.split("\t")
         score = int(fgram[1])
         fgram = fgram[0]
+        count += 1
+        total += score
 
         #print "looking for fgram %s with score %d" % (fgram, score)
 
-        while fgram > getGram(grams[gi]):
+        while fgram > lastgram:
             #print "%s is not in file" % str(grams[gi])
             (t, id) = grams[gi]
             output.append( (id, t, -1) )
             gi += 1
             if gi == glen:
-                return output
+                lastgram = "~~~~~"
+            else:
+                lastgram = getGram(grams[gi])
 
-        while fgram == getGram(grams[gi]):
+        while fgram == lastgram:
             #print "%s is in file" % str(grams[gi])
             (t, id) = grams[gi]
             output.append( (id, t, score) )
             gi += 1
             if gi == glen:
-                return output
+                lastgram = "~~~~~"
+            else:
+                lastgram = getGram(grams[gi])
 
     while gi < glen:
         (t, id) = grams[gi]
         output.append( (id, t, -1) )
         gi += 1
 
-    return output
+    return (output, count, total)
 
 def mix(gs, fs):
     if len(gs) == 0:
