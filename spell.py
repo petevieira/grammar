@@ -2,19 +2,20 @@ import operator
 import itertools
 import random
 import sys
+import heapq
 import distance
 import scorer
-import heapq
+import test
 from nlputils import *
 
 
 def printf(x):
     print x
 
-def correct(text, between=True):
+def correct(text, between=False):
     sents = splitSentence(text)
-    #if between:
-    #    sents = map(lambda s: list(intersperse(s, "")), sents)
+    if between:
+        sents = map(lambda s: list(intersperse(s, "")), sents)
     print len(sents),
     sys.stdout.flush()
     candSents = confusionSets(sents)
@@ -127,9 +128,22 @@ def confusionSets(sentences):
         ncss = []
         for (word,cs) in zip(s,css):
             ncs = []
+            if word == "^^^":
+                print word,
+                ncss.append([ ((0,-1), word) ])
+                continue
+
+            thescore = -1
+            for (candidate,score) in cs:
+                if candidate == word:
+                    thescore = score
+            if thescore <= 0:
+                thescore = 1
+
             for (candidate,score) in cs:
                 dist = distance.distance(candidate, word)
-                heapq.heappush(ncs, ((-dist*dist, score), candidate) )
+                if dist <= (len(word)+1)/2:
+                    heapq.heappush(ncs, ((-dist*dist, float(score)/float(thescore)), candidate) )
             #print word, ncs
             ncss.append(heapq.nlargest(3, ncs))
             #ncs.sort(reverse=True)
@@ -176,16 +190,16 @@ def combinations2(ls):
     tail = combinations2(ls[1:])
     return [[l]+t for l in ls[0] for t in tail]
 
-def combinations3(ls, k=3):
+def combinations3(ls, k=1):
     if ls == [] or ls == [[]]:
         return []
     a = map(operator.itemgetter(0), ls)
     rr = [a]
     rrr = [a]
     for i in xrange(k):
+        r = []
         for a in rr:
             a = list(a)
-            r = []
             b = []
             for l in ls:
                 t = a.pop(0)
@@ -218,12 +232,12 @@ if __name__ == '__main__':
     #print combinations2([[], ["0","1"]])
     #print combinations2([[]])
     #print combinations2([])
-    print combinations3([["0","1"], ["0","1"]], 0)
-    print combinations3([["0","1"], ["0","1"]], 1)
-    print combinations3([["0","1"], ["0","1"]], 2)
-    print combinations3([["0","1"], ["0","1"]], 3)
-    print combinations3([[]])
-    print combinations3([])
+    #print combinations3([["0","1"], ["0","1"]], 0)
+    #print combinations3([["0","1"], ["0","1"]], 1)
+    #print combinations3([["0","1"], ["0","1"]], 2)
+    #print combinations3([["0","1"], ["0","1"]], 3)
+    #print combinations3([[]])
+    #print combinations3([])
 
 	# text to be checked
     ss = ["I am .", "This is a sentence .", "This is another sentence .", "Hello"]
@@ -232,16 +246,19 @@ if __name__ == '__main__':
     #print correct(" ".join(ss))
 
     fr = open('test/gplchi.txt', 'r')
-    fw = open('test/gpl-corrected.txt', 'w')
     p = [1]
     ps = []
     while p != []:
-        p = readparagraph(fr)
+        p = test.readparagraph(fr)
         ps.append(p)
-    r = "\n . ^^^ . \n".join(map(unsentences, ps))
-    w = spell.correct(r)
-    w = "\n\n".join(w.split(". ^^^ ."))
-    fw.write(w)
     fr.close()
+
+    r = "\n ^^^ . \n".join(map(unsentences, ps))
+    w = correct(r)
+    print w
+    w = "\n\n".join(map(lambda x: x.strip(),w.split("^^^ .")))
+
+    fw = open('test/gpl-corrected.txt', 'w')
+    fw.write(w)
     fw.close()
 

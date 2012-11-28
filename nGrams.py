@@ -20,6 +20,7 @@ def getNGrams(sentences, fileName, n):
 	# puts all n-grams in a dictionary with format:
 	# key : value equal to  n-gram : frequency.
 	nGrams = dict()
+        sentences += [["^^^", "."]] * 10000
 	for sent in sentences:
                 sent = ["^"] + sent + ["$"]
 		for i in range(len(sent) - n + 1):

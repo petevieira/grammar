@@ -1,10 +1,7 @@
 GNU General Public License
 Third edition of the June 29, 2007
 
-Copyright (C) 2007 Free Software Foundation, Inc. (http://fsf.org)
-Allow anyone to copy and distribute this license document full version
-But it is not allowed to make any modifications
-
+Copyright (C) 2007 Free Software Foundation, Inc. (http://fsf.org) Allow anyone to copy and distribute this license document full version But it is not allowed to make any modifications
 
 Introduction
 
