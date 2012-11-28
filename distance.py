@@ -1,7 +1,9 @@
 import numpy
+import nltk.metrics.distance
 
 def distance(a,b):
-    return DamerauLevenshteinDistance(a,b)
+    return nltk.metrics.distance.edit_distance(a,b)
+    #return DamerauLevenshteinDistance(a,b)
 
 def DamerauLevenshteinDistance(a, b):
     al = len(a)

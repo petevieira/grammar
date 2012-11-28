@@ -38,7 +38,7 @@ def generate(lastgrams, t):
     if (mword == ""):
         print mword, mscore, lastgrams, found
         assert(0)
-    sys.stdout.flush()
+    #sys.stdout.flush()
     #print mword, mscore, lastgrams, found
     return mword
 

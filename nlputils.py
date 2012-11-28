@@ -5,6 +5,12 @@ def words(sentence):
     return nltk.tokenize.word_tokenize(sentence)
     #return sentence.split(" ")
 
+def unwords(sentence):
+    return " ".join(sentence)
+
+def unsentences(sentences):
+    return " ".join(map(unwords,sentences))
+
 # load sentence tokenzier from nltk
 tokenizer = nltk.data.load('tokenizers/punkt/english.pickle')
 

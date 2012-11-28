@@ -1,18 +1,25 @@
 import operator
 import itertools
-import distance
 import random
+import sys
+import distance
 import scorer
+import heapq
 from nlputils import *
+
 
 def printf(x):
     print x
 
 def correct(text, between=True):
     sents = splitSentence(text)
-    if between:
-        sents = map(lambda s: list(intersperse(s, "")), sents)
+    #if between:
+    #    sents = map(lambda s: list(intersperse(s, "")), sents)
+    print len(sents),
+    sys.stdout.flush()
     candSents = confusionSets(sents)
+    print len(candSents),
+    sys.stdout.flush()
 
     # create trigrams from candidate sentences
     trigrams = []
@@ -113,18 +120,25 @@ def confusionSets(sentences):
     candSents = []
     sid = 0
     for (s,css) in zip(sentences, candidates):
+
+        print "a", sum(map(len, css)), 
+        sys.stdout.flush()
+
         ncss = []
         for (word,cs) in zip(s,css):
             ncs = []
             for (candidate,score) in cs:
                 dist = distance.distance(candidate, word)
-                ncs.append( ((-dist*dist, score), candidate) )
-            ncs.sort(reverse=True)
+                heapq.heappush(ncs, ((-dist*dist, score), candidate) )
             #print word, ncs
-            ncss.append(ncs[0:5])
+            ncss.append(heapq.nlargest(3, ncs))
+            #ncs.sort(reverse=True)
             #ncss.append(ncs)
         
-        candSents += map(lambda s: (s, sid), combinations2(ncss))
+        print "b", len(ncss),
+        sys.stdout.flush()
+        candSents += map(lambda s: (s, sid), combinations3(ncss))
+        print "c"
         sid += 1
     #print candidates
     print candSents
@@ -162,6 +176,35 @@ def combinations2(ls):
     tail = combinations2(ls[1:])
     return [[l]+t for l in ls[0] for t in tail]
 
+def combinations3(ls, k=3):
+    if ls == [] or ls == [[]]:
+        return []
+    a = map(operator.itemgetter(0), ls)
+    rr = [a]
+    rrr = [a]
+    for i in xrange(k):
+        for a in rr:
+            a = list(a)
+            r = []
+            b = []
+            for l in ls:
+                t = a.pop(0)
+                for c in l[1:]:
+                    r.append(b + [c] + a)
+                b.append(t)
+
+        rr = []
+        for e in r:
+            if not e in rrr:
+                rrr.append(e)
+                rr.append(e)
+        if rr == []:
+            break
+    return rrr
+
+
+
+
 if __name__ == '__main__':
     #print combinations([["0","1"], ["2","3"], ["4","5"]])
     #print combinations([["0","1"], ["2","3","5"]])
@@ -175,9 +218,30 @@ if __name__ == '__main__':
     #print combinations2([[], ["0","1"]])
     #print combinations2([[]])
     #print combinations2([])
+    print combinations3([["0","1"], ["0","1"]], 0)
+    print combinations3([["0","1"], ["0","1"]], 1)
+    print combinations3([["0","1"], ["0","1"]], 2)
+    print combinations3([["0","1"], ["0","1"]], 3)
+    print combinations3([[]])
+    print combinations3([])
 
 	# text to be checked
     ss = ["I am .", "This is a sentence .", "This is another sentence .", "Hello"]
     #print taggedConfusionTrigrams(map(words, ss))
 	# run spell checker and print result
-    print correct(" ".join(ss))
+    #print correct(" ".join(ss))
+
+    fr = open('test/gplchi.txt', 'r')
+    fw = open('test/gpl-corrected.txt', 'w')
+    p = [1]
+    ps = []
+    while p != []:
+        p = readparagraph(fr)
+        ps.append(p)
+    r = "\n . ^^^ . \n".join(map(unsentences, ps))
+    w = spell.correct(r)
+    w = "\n\n".join(w.split(". ^^^ ."))
+    fw.write(w)
+    fr.close()
+    fw.close()
+

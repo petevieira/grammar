@@ -1,4 +1,5 @@
 import distance
+import spell
 from nlputils import *
 
 def readparagraph(f):
@@ -50,6 +51,7 @@ def compare(fn1, fn2):
     return (float(d)/l1, l1, l2)
 
 if __name__ == '__main__':
+    print compare('test/gpl-3.0.txt', 'test/gpl-corrected.txt')
     print compare('test/gpl-3.0.txt', 'test/gplchi.txt')
 
 
