@@ -1,0 +1,7 @@
+#rst2latex paper.txt > paper.tex && \
+latex paper.tex  && \
+bibtex paper && \
+latex paper.tex  && \
+pdflatex paper.tex && \
+xpdf paper.pdf
+
