@@ -70,7 +70,7 @@ from Yahoo! N-Grams Dataset.
 Our implementation is based on known approaches utilizing three phases:
 
 We implemented a spelling and grammar checker using a corpus of n-grams. We
-created the corpus by extracting n-grams with n equal to 1 through 5 and scored
+created the corpus by extracting n-grams with \textit{n} equal to 1 through 5 and scored
 them based on frequency in the corpus using the 1-million word Brown corpus from
 the Natural Language Toolkit.
 First, trigrams were used for correction. For this, we extracted all trigrams in
@@ -81,16 +81,16 @@ those of the trigram in the sentence being corrected except for the middle word.
 Here is an example of confusion set search for the trigram
 \\
 \newline
-\tab\tab\emph{He went home}
+\tab\tab\textit{He went home}
 \\\newline
 Merged trigrams in the corpus would be of the form:
 \\\newline
-\tab\tab\emph{He ran home} \\
-\tab\tab\emph{He was home} \\
-\tab\tab\emph{He walked home}
+\tab\tab\textit{He ran home} \\
+\tab\tab\textit{He was home} \\
+\tab\tab\textit{He walked home}
 \newline
 
-So the confusion set would be: \{\emph{ran, was, walked}\}. Candidate sentences
+So the confusion set would be: \{\textit{ran, was, walked}\}. Candidate sentences
 were then generated using the confusion set for each word in a sentence. Next,
 the Damerau-Levenshtein distance \cite{damerau64,levenshtein66} algorithm was
 used to determine how similar each word in each candidate sentence was to the
@@ -110,7 +110,7 @@ the original sentence and used that as a score too. A linear interpolation of
 these scores using manually adjusted weighting produced final evaluation values
 used to select the correct sentence. After performing this evaluation and
 selection for all the sentences in the documents, The corrected document was
-compared to the original document using word error rate (WER).
+compared to the original document using word error rate (WER) which is similar to the Damerau-Levenshtein distance algorithm, except uses a faster version using the Levenshtein distance.
 
 \section{Evaluation}
 For evaluation, we used two methods. The first method evaluated our improvement
@@ -121,38 +121,32 @@ error rate) to the original English version of the document to get a base score.
 To evaluate our algorithm we ran this poorly translated text through our
 algorithm and compared the results with the original document using WER, which
 is the percent difference between the documents. We did this using two different
-methods of finding errors, using just trigrams, and using n-grams with n equal
+methods of finding errors, using just trigrams, and using n-grams with \textit{n} equal
 to 1 through 5. We put this translated document into Microsoft Word, corrected
 errors if suggestions were given and compared this to the original document
 using WER. The results are shown in Table~\ref{gpl}.
 
-\begin{table}[t]
-    \centering
-    \begin{tabular}{ | l | cc | }
-        \hline
-        Documents & Percent & Different \\
-        \cline{2-3} Being & Using & \multicolumn{1}{|c|}{Using} \\
-        Compared & 3-grams & \multicolumn{1}{|c|}{1-5-grams} \\
-        \hline
-        Translated GPL & & \multicolumn{1}{|c|}{} \\
-        vs. & 0.61 & \multicolumn{1}{|c|}{0.61} \\
-        GPL & & \multicolumn{1}{|c|}{} \\
-        \hline
-        Corrected GPL & & \multicolumn{1}{|c|}{} \\
-        vs. & 0.68 & \multicolumn{1}{|c|}{0.61} \\
-        GPL & & \multicolumn{1}{|c|}{} \\
-        \hline
-        M. Word GPL & & \multicolumn{1}{|c|}{} \\
-        vs. & x & \multicolumn{1}{|c|}{y} \\
-        GPL & & \multicolumn{1}{|c|}{} \\
-        \hline
-    \end{tabular}
-    \caption{Original text vs. corrected text comparisons}
-    \label{gpl}
+\begin{table}[h]
+\centering
+\begin{tabular}{ | c | c | c | }
+\hline
+Evaluation & Technique & Percent \\
+Technique & Used & Different \\
+\hline
+Distance & Original & 61\% \\
+\cline{2-3} Algorithm & 3-grams & 68\% \\
+\hline
+Word & Original & 61\% \\
+\cline{2-3} Error Rate & 1-5 grams & 61\% \\
+\cline{2-3} (WER) & MS Word & 66\% \\
+\hline
+\end{tabular}
+\caption{Evaluation of original English text vs. translated text and corrected translation using different evaluation techniques and correction methods.}
+\label{gpl}
 \end{table}
 
 The second method we used to evaluate our approach was trying to correct errors
-introduced into a text. We did this by choosing \emph{n} sentences randomly in a
+introduced into a text. We did this by choosing \textit{n} sentences randomly in a
 test text and then introducing one error per sentence. We then ran those
 sentences through our algorithm and counted the number of correctly corrected
 sentences and uncorrected or falsely corrected sentences. Our average percentage
@@ -163,11 +157,11 @@ their algorithm and came up with impressive results due to their use of a
 used a corpus of 1-million words. The results of \cite{Bassil12} and
 \cite{Fossati07} are shown in table~\ref{text}
 
-\begin{table}[t]
+\begin{table}[h]
     \centering
     \begin{tabular}{ | l | c | c | c | }
         \hline
-        Types of & Successfully & Not & Falsely \\
+        Types of & Well & Not & Falsely \\
         Corrections & Corrected & Corrected & Corrected \\
         \hline
         Ours & 0.72 & 0.16 & 0.16 \\
@@ -177,7 +171,7 @@ used a corpus of 1-million words. The results of \cite{Bassil12} and
         Fossati\cite{Fossati07} & 0.50 & 0.32 & 0.14 \\
         \hline
     \end{tabular}
-    \caption{Results of correcting errors introduced in a text}
+    \caption{Results of correcting errors introduced into a text}.
     \label{text}
 \end{table}
 
@@ -186,6 +180,9 @@ A larger corpus would definitely have helped, given a powerful enough computer
 to handle it. The use of a small corpus tends to produce worse results because
 of data sparseness, which gives rise to situations where the correction does not
 exist in the corpus, making such corrections impossible without a grammar model.
+In the first test, we learned that word error rate is a faster and better 
+algorithm in our situation for determining the distance between n-grams, as the
+shown in table~\ref{gpl}.
 The results in table~\ref{text} show that software such as Microsoft Word and
 almost all other do a very poor job at performing grammar correction.
 Something to conclude from our testing is that software such as Google Translate
@@ -199,7 +196,7 @@ evaluating those. We used a different approach, that while being more complete,
 was also slower. The slowest part of our algorithm was actually choosing the
 confusion set for each character by measuring the edit-distance between the
 original word and the candidate. Using the faster Levenshtein distance instead
-of the Damerau–Levenshtein distance we achieved a considerable speedup. Overall
+of the Damerau-Levenshtein distance we achieved a considerable speedup. Overall
 we learned that using solely n-grams to correct grammar is insufficient, and the
 use of some property of grammar is necessary, whether it be a part-of-speech
 tagging or some other method. If we were to change something it would be to use
