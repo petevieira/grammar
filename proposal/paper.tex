@@ -34,10 +34,11 @@ this many have used a corpus, a database of existing texts, usually hundreds of
 books and newspapers. These corpora can be tagged or untagged. A tagged corpus
 contains, for each word, a tag describing which part of speech the word
 represents. The corpus is usually preprocessed into counts of n-grams. An n-gram
-is a sequence of tokens, usually words or characters of length n. Different
-approaches to solving the problem include using tagged or untagged corpora and
-using n-grams with different n in different parts of the error correction
-process.
+is a sequence of tokens, usually words or characters of length n. Usually,
+n-grams are extracted from a corpus by taking all possible substrings of tokens
+or words of length n of all sentences in the corpus. Different approaches to
+solving the problem include using tagged or untagged corpora and using n-grams
+with different n in different parts of the error correction process.
 
 In a related field, machine translation does not traditionally utilize much
 language data (except for the translation model), which \cite{norvig09}
@@ -69,10 +70,8 @@ from Yahoo! N-Grams Dataset.
 \section{Implementation Details}
 Our implementation is based on known approaches utilizing three phases:
 
-We implemented a spelling and grammar checker using a corpus of n-grams. We
-created the corpus by extracting n-grams with \textit{n} equal to 1 through 5 and scored
-them based on frequency in the corpus using the 1-million word Brown corpus from
-the Natural Language Toolkit.
+We implemented a spelling and grammar checker using a corpus of n-grams. We transformed the 1-million word Brown corpus from the Natural Language Toolkit into n-grams by extracting substrings of tokens of length \textit{n} equal to 1 through and scored them based on frequency in the corpus. Tokens are either words, punctuation symbols or start- or end-of-sentence symbols.
+
 First, trigrams were used for correction. For this, we extracted all trigrams in
  each sentence and found a confusion set of words that each middle word in the
 trigram could be confused with. To do this we searched the corpus of scored
@@ -92,8 +91,10 @@ Merged trigrams in the corpus would be of the form:
 
 So the confusion set would be: \{\textit{ran, was, walked}\}. Candidate sentences
 were then generated using the confusion set for each word in a sentence. Next,
-the Damerau-Levenshtein distance \cite{damerau64,levenshtein66} algorithm was
-used to determine how similar each word in each candidate sentence was to the
+the Damerau-Levenshtein distance \cite{damerau64,levenshtein66} algorithm (an 
+algorithm that calculates the edit distance between two words, that is the number 
+of insertions, substitutions, deletions and transpositions needed to change one 
+word into another) was used to determine how similar each word in each candidate sentence was to the
 corresponding word in the original text. The three candidate sentences with the
 least distance and highest score are returned. These candidate words are then
 combined into candidate sentences.
