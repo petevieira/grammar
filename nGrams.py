@@ -42,9 +42,11 @@ def getNGrams(sentences, fileName, n):
 
 
 if __name__ == '__main__':
-	
+
+    # get sentences from the brown corpus
 	sentences = brown.sents()
         sentences = splitSentence(unsentences(sentences))
+    # create n-gram files
 	for fileName in fileNames:
 		n = int(fileName[0])
 		fileName = "./ngrams/" + fileName

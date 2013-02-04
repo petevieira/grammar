@@ -1,13 +1,15 @@
 import nltk.data
 import nltk.tokenize
 
+# takes a sentence and returns the words in it
 def words(sentence):
     return nltk.tokenize.word_tokenize(sentence)
-    #return sentence.split(" ")
 
+# takes words and returns a sentence
 def unwords(sentence):
     return " ".join(sentence)
 
+# takes sentences and joins them
 def unsentences(sentences):
     return " ".join(map(unwords,sentences))
 
@@ -51,17 +53,18 @@ def trigramify(words, sid):
     o.append( (t0, t1, "$", (sid, wid)) )
     return o
 
-
+# takes a sentence and creates ngrams from it and gives
+# it an id, where n is specified in the arguments
 def gramify(n, sent, id):
     l = []
     sent = ["^"] + sent + ["$"]
     for i in range(len(sent) - n + 1):
         gram = sent[i:i+n]
         l.append( (gram, (id, i)) )
-    return l
-        
+    return l 
 
-
+# takes a sentence of words and puts them into a tuple
+# with the prior word, current word, and sentence and word id.
 def betweens(words, sid):
     o = []
     wid = -1
@@ -74,6 +77,8 @@ def betweens(words, sid):
     o.append( (t0, "", "$", (sid, wid)) )
     return o
 
+# iterate over iterable items passed in and return
+# each item and the delimiter
 def intersperse(iterable, delimiter):
     it = iter(iterable)
     yield next(it)
